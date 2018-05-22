@@ -14,6 +14,7 @@
         <% end %>
         <%= task.title %>
         <%= link_to "More details", task_path(task) %>
+        <%= link_to "Remove task", task_path(task), method: :delete %>
         </li>
       </ul>
     <% end %>
